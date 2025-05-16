@@ -1,24 +1,29 @@
-import { Detect } from "@/components/detectAI/detect";
-import { Hero } from "@/components/hero";
+
+
+import FAQ3 from "@/components/faq/faq3";
+import Part1B from "@/components/Landing/part1b";
+import Part2 from "@/components/Landing/part2";
+import Part3 from "@/components/Landing/part3";
+import Part6 from "@/components/Landing/part6";
+import Part7 from "@/components/Landing/part7";
+import Testimonials from "@/components/Landing/testimonies";
+import Mainbox from "@/components/maindashboard/mainbox";
 import { Navbar } from "@/components/navbar";
-import { Plagiarism } from "@/components/plagiarism/plagiarism";
-import { ChatInterface } from "@/components/uidesign/ChatInterface";
+
+
 
 export default function Home() {
     return (
-        <main className="flex flex-col items-center justify-start p-6 bg-gray-50 space-y-12">
-            {/* First Section: Hero and ChatInterface */}
-            <div className="flex flex-row items-center justify-between w-screen bg-gray-50 w-full mb-12">
-                <Hero />
-                <ChatInterface />
-            </div>
-
-            {/* Second Section: DetectAI */}
-            <section className="w-screen mt-5 bg-blue-50">
-                <div className="flex flex-col items-center justify-center">
-                    <Detect />
-                </div>
-            </section>
+        <main> 
+            <Mainbox />
+            <Part1B />
+            <Part2 />
+            <Part3 />
+            <Part6 />
+            <Part7 />
+            <Testimonials />
+            <FAQ3 />
+            
 
 
         </main>

@@ -1,0 +1,9 @@
+module.exports = {
+  extends: ['next/core-web-vitals'],
+  rules: {
+    'react/no-unescaped-entities': 'off',
+    '@next/next/no-img-element': 'warn',
+    '@next/next/no-async-client-component': 'warn',
+    'react-hooks/rules-of-hooks': 'error'
+  }
+};

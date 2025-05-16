@@ -5,6 +5,7 @@ import ClientLayout from "./client-layout";
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "next-themes"
 import { Toaster } from "@/components/ui/toaster"
+import Footer from '@/components/footer';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Toaster />
+        <Footer />
       </body>
     </html>
   );

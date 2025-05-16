@@ -3,7 +3,7 @@ import { cva } from "class-variance-authority"
 
 const container = cva("flex gap-x-3")
 
-const item = cva("text-black font-semibold text-sl")
+const item = cva("text-white font-semibold text-sl")
 
 export function NavigationMenu(){
     return <ul className={container()}>

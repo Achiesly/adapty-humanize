@@ -1,31 +1,26 @@
 import { NavigationMenu } from "@/components/navigationMenu";
-import { link } from "fs";
-import { url } from "inspector";
 
 
 
-export default {
-
+const navigationConfig = {
     NavigationMenu: [
         {
-            item: "Home",
+            item: "Humanizer",
             url: "/"
-        },
-        {
-            item: "AI Humanizer",
-            url: "/ai humanizer"
-        },
+        },     
         {
             item: "AI Detector",
-            url: "/ai detector"
+            url: "/ai_detector"
         },
         {
             item: "Plagiarism Checker",
-            url: "/plagiarism checker"
+            url: "/plagiarism_checker"
         },
         {
             item: "Pricing",
-            url: "#pricing"
+            url: "/pricing"
         },
     ]
-}
+};
+
+export default navigationConfig;
